@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en" data-layout="semibox" data-sidebar-visibility="show" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Profile Settings | Velzon - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- App Search-->
+                <form class="app-search d-none d-md-block">
+                    <div class="position-relative">
+                        <input type="text" class="form-control" placeholder="Search..." autocomplete="off" id="search-options" value="">
+                        <span class="mdi mdi-magnify search-widget-icon"></span>
+                        <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none" id="search-close-options"></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bx bx-search fs-22"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                        <form class="p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="dropdown ms-sm-3 header-item">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                            <span class="text-start ms-xl-2">
+                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Anna Adame</span>
+                                <span class="d-none d-xl-block ms-1 fs-12 user-name-sub-text">Founder</span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header">Welcome Anna!</h6>
+                        <a class="dropdown-item" href="pages-profile-settings.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                        <!-- <a class="dropdown-item" href="pages-profile-settings.html"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a> -->
+                        <a class="dropdown-item" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo_lomba.png" alt="" height="125">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid">
+
+                    <div id="two-column-menu">
+                    </div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="index.html">
+                                <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboard</span>
+                            </a>
+                        </li> <!-- end Dashboard Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTables">
+                                <i class="ri-layout-grid-line"></i> <span data-key="t-tables">Peminjaman</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarTables">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="apps-ecommerce-orders.html" class="nav-link" data-key="t-basic-tables">Barang Dipinjam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="tables-gridjs.html" class="nav-link" data-key="t-grid-js">Sejarah Peminjaman</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                                <i class="ri-stack-line"></i> <span data-key="t-advance-ui">Master Data</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="barang.html" class="nav-link" data-key="t-sweet-alerts">Barang</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="charts-echarts.html" class="nav-link" data-key="t-nestable-list">Pengguna</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+
+            <div class="sidebar-background"></div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xxl-3">
+                            <div class="card mt-n10">
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <div class="profile-user position-relative d-inline-block mx-auto  mb-4">
+                                            <img src="assets/images/users/avatar-1.jpg" class="rounded-circle avatar-xl img-thumbnail user-profile-image" alt="user-profile-image">
+                                            <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
+                                                <input id="profile-img-file-input" type="file" class="profile-img-file-input">
+                                                <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                        <i class="ri-camera-fill"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <h5 class="fs-16 mb-1">Anna Adame</h5>
+                                        <p class="text-muted mb-0">User</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                        <div class="col-xxl-9">
+                            <div class="card mt-xxl-n10">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#personalDetails" role="tab">
+                                                <i class="fas fa-home"></i> Personal Details
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#changePassword" role="tab">
+                                                <i class="far fa-user"></i> Change Password
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="personalDetails" role="tabpanel">
+                                            <form action="javascript:void(0);">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="firstnameInput" class="form-label">First Name</label>
+                                                            <input type="text" class="form-control" id="firstnameInput" placeholder="Enter your firstname" value="Dave">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="lastnameInput" class="form-label">Last Name</label>
+                                                            <input type="text" class="form-control" id="lastnameInput" placeholder="Enter your lastname" value="Adame">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="phonenumberInput" class="form-label">Phone Number</label>
+                                                            <input type="text" class="form-control" id="phonenumberInput" placeholder="Enter your phone number" value="+(1) 987 6543">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="emailInput" class="form-label">Email Address</label>
+                                                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" value="daveadame@velzon.com">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-12">
+                                                        <div class="mb-3">
+                                                            <label for="JoiningdatInput" class="form-label">Joining Date</label>
+                                                            <input type="text" class="form-control" data-provider="flatpickr" id="JoiningdatInput" data-date-format="d M, Y" data-deafult-date="24 Nov, 2021" placeholder="Select date" />
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="designationInput" class="form-label">Role</label>
+                                                            <input type="text" class="form-control" id="designationInput" placeholder="Designation" value="Warga">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label for="cityInput" class="form-label">City</label>
+                                                            <input type="text" class="form-control" id="cityInput" placeholder="City" value="California" />
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label for="countryInput" class="form-label">Country</label>
+                                                            <input type="text" class="form-control" id="countryInput" placeholder="Country" value="United States" />
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label for="zipcodeInput" class="form-label">Zip Code</label>
+                                                            <input type="text" class="form-control" minlength="5" maxlength="6" id="zipcodeInput" placeholder="Enter zipcode" value="90011">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-12">
+                                                        <div class="hstack gap-2 justify-content-end">
+                                                            <button type="submit" class="btn btn-secondary">Updates</button>
+                                                            <button type="button" class="btn btn-soft-danger">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                </div>
+                                                <!--end row-->
+                                            </form>
+                                        </div>
+                                        <!--end tab-pane-->
+                                        <div class="tab-pane" id="changePassword" role="tabpanel">
+                                            <form action="javascript:void(0);">
+                                                <div class="row g-2">
+                                                    <div class="col-lg-4">
+                                                        <div>
+                                                            <label for="oldpasswordInput" class="form-label">Old Password*</label>
+                                                            <input type="password" class="form-control" id="oldpasswordInput" placeholder="Enter current password">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-4">
+                                                        <div>
+                                                            <label for="newpasswordInput" class="form-label">New Password*</label>
+                                                            <input type="password" class="form-control" id="newpasswordInput" placeholder="Enter new password">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-4">
+                                                        <div>
+                                                            <label for="confirmpasswordInput" class="form-label">Confirm Password*</label>
+                                                            <input type="password" class="form-control" id="confirmpasswordInput" placeholder="Confirm password">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-12">
+                                                        <div class="mb-3">
+                                                            <a href="javascript:void(0);" class="link-primary text-decoration-underline">Forgot Password ?</a>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-12">
+                                                        <div class="text-end">
+                                                            <button type="submit" class="btn btn-secondary">Change Password</button>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                </div>
+                                                <!--end row-->
+                                            </form>
+                                            <div class="mt-4 mb-3 border-bottom pb-2">
+                                                <div class="float-end">
+                                                    <a href="javascript:void(0);" class="link-primary">All Logout</a>
+                                                </div>
+                                                <h5 class="card-title">Login History</h5>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="flex-shrink-0 avatar-sm">
+                                                    <div class="avatar-title bg-light text-primary rounded-3 fs-18">
+                                                        <i class="ri-smartphone-line"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h6>iPhone 12 Pro</h6>
+                                                    <p class="text-muted mb-0">Los Angeles, United States - March 16 at 2:47PM</p>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);">Logout</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="flex-shrink-0 avatar-sm">
+                                                    <div class="avatar-title bg-light text-primary rounded-3 fs-18">
+                                                        <i class="ri-tablet-line"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h6>Apple iPad Pro</h6>
+                                                    <p class="text-muted mb-0">Washington, United States - November 06 at 10:43AM</p>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);">Logout</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="flex-shrink-0 avatar-sm">
+                                                    <div class="avatar-title bg-light text-primary rounded-3 fs-18">
+                                                        <i class="ri-smartphone-line"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h6>Galaxy S21 Ultra 5G</h6>
+                                                    <p class="text-muted mb-0">Conneticut, United States - June 12 at 3:24PM</p>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);">Logout</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0 avatar-sm">
+                                                    <div class="avatar-title bg-light text-primary rounded-3 fs-18">
+                                                        <i class="ri-macbook-line"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h6>Dell Inspiron 14</h6>
+                                                    <p class="text-muted mb-0">Phoenix, United States - July 26 at 8:10AM</p>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);">Logout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end tab-pane-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+
+                </div>
+                <!-- container-fluid -->
+            </div><!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © Velzon.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by Themesbrand
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- profile-setting init js -->
+    <script src="assets/js/pages/profile-setting.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

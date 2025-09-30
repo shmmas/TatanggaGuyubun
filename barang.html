@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en" data-layout="semibox" data-sidebar-visibility="show" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Orders | Velzon - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Sweet Alert css-->
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box horizontal-logo">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-dark.png" alt="" height="17">
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="17">
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- App Search-->
+                <form class="app-search d-none d-md-block">
+                    <div class="position-relative">
+                        <input type="text" class="form-control" placeholder="Search..." autocomplete="off" id="search-options" value="">
+                        <span class="mdi mdi-magnify search-widget-icon"></span>
+                        <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none" id="search-close-options"></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bx bx-search fs-22"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                        <form class="p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="dropdown ms-sm-3 header-item">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                            <span class="text-start ms-xl-2">
+                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Anna Adame</span>
+                                <span class="d-none d-xl-block ms-1 fs-12 user-name-sub-text">Founder</span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header">Welcome Anna!</h6>
+                        <a class="dropdown-item" href="pages-profile-settings.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                        <!-- <a class="dropdown-item" href="pages-profile-settings.html"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a> -->
+                        <a class="dropdown-item" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo_lomba.png" alt="" height="125">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid">
+
+                    <div id="two-column-menu">
+                    </div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="index.html">
+                                <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboard</span>
+                            </a>
+                        </li> <!-- end Dashboard Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTables">
+                                <i class="ri-layout-grid-line"></i> <span data-key="t-tables">Peminjaman</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarTables">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="apps-ecommerce-orders.html" class="nav-link" data-key="t-basic-tables">Barang Dipinjam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="tables-gridjs.html" class="nav-link" data-key="t-grid-js">Sejarah Peminjaman</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                                <i class="ri-stack-line"></i> <span data-key="t-advance-ui">Master Data</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="barang.html" class="nav-link" data-key="t-sweet-alerts">Barang</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="charts-echarts.html" class="nav-link" data-key="t-nestable-list">Pengguna</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+
+            <div class="sidebar-background"></div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">DATA BARANG</h4>
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Master Data</a></li>
+                                        <li class="breadcrumb-item active">Barang</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card" id="orderList">
+                                <div class="card-header border-0">
+                                    <div class="row align-items-center gy-3">
+                                        <div class="col-sm">
+                                            <h5 class="card-title mb-0">Barang</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body border border-dashed border-end-0 border-start-0">
+                                    <form>
+                                        <div class="row g-3">
+                                            <div class="col-xxl-5 col-sm-6">
+                                                <div class="search-box">
+                                                    <input type="text" class="form-control search" placeholder="Search for order ID, Peminjam, order status or something...">
+                                                    <i class="ri-search-line search-icon"></i>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-2 col-sm-6">
+                                                <div>
+                                                    <input type="text" class="form-control" data-provider="flatpickr" data-date-format="d M, Y" data-range-date="true" id="demo-datepicker" placeholder="Select date">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-2 col-sm-4">
+                                                <div>
+                                                    <select class="form-control" data-choices data-choices-search-false name="choices-single-default" id="idStatus">
+                                                        <option value="">Status</option>
+                                                        <option value="all" selected>All</option>
+                                                        <option value="Pending">Pending</option>
+                                                        <option value="Inprogress">Inprogress</option>
+                                                        <option value="Cancelled">Cancelled</option>
+                                                        <option value="Pickups">Pickups</option>
+                                                        <option value="Returns">Returns</option>
+                                                        <option value="Delivered">Delivered</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-2 col-sm-4">
+                                                <div>
+                                                    <select class="form-control" data-choices data-choices-search-false name="choices-single-default" id="idPayment">
+                                                        <option value="">Select Payment</option>
+                                                        <option value="all" selected>All</option>
+                                                        <option value="Mastercard">Mastercard</option>
+                                                        <option value="Paypal">Paypal</option>
+                                                        <option value="Visa">Visa</option>
+                                                        <option value="COD">COD</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-1 col-sm-4">
+                                                <div>
+                                                    <button type="button" class="btn btn-primary w-100" onclick="SearchData();"> <i class="ri-equalizer-fill me-1 align-bottom"></i>
+                                                        Filters
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </form>
+                                </div>
+                                <div class="card-body pt-0">
+
+                                        <div class="table-responsive table-card mb-1">
+                                            <table class="table table-nowrap align-middle" id="orderTable">
+                                                <thead class="text-muted table-light">
+                                                    <tr class="text-uppercase fs-13">
+                                                        <th scope="col" style="width: 25px;">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" id="checkAll" value="option">
+                                                            </div>
+                                                        </th>
+                                                        <th class="sort" data-sort="id">ID</th>
+                                                        <th class="sort" data-sort="customer_name">Pemilik</th>
+                                                        <th class="sort" data-sort="img">Gmabar Barang</th>
+                                                        <th class="sort" data-sort="product_name">Barang</th>
+                                                        <th class="sort" data-sort="date">Total Barang</th>
+                                                        <th class="sort" data-sort="amount">Deskripsi</th>
+                                                        <th class="sort" data-sort="amount">Status</th>
+                                                        <th class="sort" data-sort="city">Action</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody class="">
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="checkAll" value="option1">
+                                                            </div>
+                                                        </th>
+                                                        <td class="id"><a href="apps-ecommerce-product-details.html" class="fw-medium link-primary">#VZ2101</a></td>
+                                                        <td class="">RT</td>
+                                                        <td><img src="https://siopen.hulusungaiselatankab.go.id/storage/merchant/products/2022/03/10/44c0730cfde3aa6bdd94d0000c13c001.jpg" height="60"></td>
+                                                        <td class="">Sapu</td>
+                                                        <td class="">4</td>
+                                                        <td class="">Berbahan Kayu, Berwarna hijau muda</td>
+                                                        <td class=""><span class="badge bg-warning-subtle text-warning text-uppercase">Pending</span>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            <ul class="list-inline hstack gap-2 mb-0">
+                                                                <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                                                    <a href="apps-ecommerce-product-details.html" class="text-primary d-inline-block">
+                                                                        <i class="ri-eye-fill fs-16"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                                                    <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                                        <i class="ri-pencil-fill fs-16"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Remove">
+                                                                    <a class="text-danger d-inline-block remove-item-btn" data-bs-toggle="modal" href="#deleteOrder">
+                                                                        <i class="ri-delete-bin-5-fill fs-16"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="checkAll" value="option1">
+                                                            </div>
+                                                        </th>
+                                                        <td class="id"><a href="apps-ecommerce-product-details.html" class="fw-medium link-primary">#VZ2102</a></td>
+                                                        <td class="">RW</td>
+                                                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5X3cwKgzyyUJdn7k6KhXDA6NjJsS9sA76KqMOUoSPUPDIXyMA5CULXxCRx7IAo7TyFg&usqp=CAU" height="60"></td>
+                                                        <td class="">Lampu</td>
+                                                        <td class="">21</td>
+                                                        <td class="">Lampu Philips Lampu LED TForce Core GN3 50W E40 865</td>
+                                                        <td class=""><span class="badge bg-warning-subtle text-warning text-uppercase">Pending</span>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            <ul class="list-inline hstack gap-2 mb-0">
+                                                                <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                                                    <a href="apps-ecommerce-product-details.html" class="text-primary d-inline-block">
+                                                                        <i class="ri-eye-fill fs-16"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                                                    <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                                        <i class="ri-pencil-fill fs-16"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Remove">
+                                                                    <a class="text-danger d-inline-block remove-item-btn" data-bs-toggle="modal" href="#deleteOrder">
+                                                                        <i class="ri-delete-bin-5-fill fs-16"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="checkAll" value="option1">
+                                                            </div>
+                                                        </th>
+                                                        <td class="id"><a href="apps-ecommerce-product-details.html" class="fw-medium link-primary">#VZ2103</a></td>
+                                                        <td class="">RT</td>
+                                                        <td><img src="https://ilmuseni.com/wp-content/uploads/2017/12/tikar-karpet-kain-perca_opt.jpg" height="60"></td>
+                                                        <td class="">Karpet Kain</td>
+                                                        <td class="">2</td>
+                                                        <td class="">Karpet Kain motif kotak-kotak warna coklat</td>
+                                                        <td class=""><span class="badge bg-warning-subtle text-warning text-uppercase">Pending</span>
+                                                        </td>
+                                                        
+                                                        <td>
+                                                            <ul class="list-inline hstack gap-2 mb-0">
+                                                                <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="View">
+                                                                    <a href="apps-ecommerce-product-details.html" class="text-primary d-inline-block">
+                                                                        <i class="ri-eye-fill fs-16"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-inline-item edit" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Edit">
+                                                                    <a href="#showModal" data-bs-toggle="modal" class="text-primary d-inline-block edit-item-btn">
+                                                                        <i class="ri-pencil-fill fs-16"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-inline-item" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Remove">
+                                                                    <a class="text-danger d-inline-block remove-item-btn" data-bs-toggle="modal" href="#deleteOrder">
+                                                                        <i class="ri-delete-bin-5-fill fs-16"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="noresult" style="display: none">
+                                                <div class="text-center">
+                                                    <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="loop" colors="primary:#405189,secondary:#0ab39c" style="width:75px;height:75px"></lord-icon>
+                                                    <h5 class="mt-2">Sorry! No Result Found</h5>
+                                                    <p class="text-muted">We've searched more than 150+ Orders We did not find any orders for you search.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <div class="pagination-wrap hstack gap-2">
+                                                <a class="page-item pagination-prev disabled" href="#">
+                                                    Previous
+                                                </a>
+                                                <ul class="pagination listjs-pagination mb-0"></ul>
+                                                <a class="page-item pagination-next" href="#">
+                                                    Next
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="showModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-light p-3">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Pinjam</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-modal"></button>
+                                                </div>
+                                                <form class="tablelist-form" autocomplete="off">
+                                                    <div class="modal-body">
+                                                        <input type="hidden" id="id-field" />
+
+                                                        <!-- <div class="mb-3" id="modal-id">
+                                                            <label for="orderId" class="form-label">ID</label>
+                                                            <input type="text" id="orderId" class="form-control" placeholder="ID"  />
+                                                        </div> -->
+
+                                                        <div class="mb-3">
+                                                            <label for="customername-field" class="form-label">Nama Peminjam</label>
+                                                            <input type="text" id="customername-field" class="form-control" placeholder="Masukkan nama" required />
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label for="productname-field" class="form-label">Barang</label>
+                                                            <select class="form-control" data-trigger name="productname-field" id="productname-field" required >
+                                                                <option value="">Product</option>
+                                                                <option value="Sound">Sound</option>
+                                                                <option value="Microphone">Microphone</option>
+                                                                <option value="Kursi PLastik">Kursi PLastik</option>
+                                                                <option value="Meja Kayu">Meja Kayu</option>
+                                                                <option value="Terpal">Terpal</option>
+                                                                <option value="Lampu">Lampu</option>
+                                                                <option value="Tali Tambang">Tali Tambang</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="mb-3">
+                                                            <label for="date-field" class="form-label">Tanggal</label>
+                                                            <input type="date" id="date-field" class="form-control" data-provider="flatpickr" required data-date-format="d M, Y" data-enable-time required placeholder="Select date" />
+                                                        </div>
+                                                        
+                                                        <div class="mb-3">
+                                                            <label for="amount-field" class="form-label">Jumlah Barang</label>
+                                                            <input type="text" id="customername-field" class="form-control" placeholder="Masukkan jumlah barang" required />
+                                                        </div>
+
+                                                        <div>
+                                                            <label for="delivered-status" class="form-label">Delivery Status</label>
+                                                            <select class="form-control" data-trigger name="delivered-status" required id="delivered-status">
+                                                                <option value="">Delivery Status</option>
+                                                                <option value="Pending">Pending</option>
+                                                                <option value="Inprogress">Inprogress</option>
+                                                                <option value="Cancelled">Cancelled</option>
+                                                                <option value="Pickups">Pickups</option>
+                                                                <option value="Delivered">Delivered</option>
+                                                                <option value="Returns">Returns</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div class="hstack gap-2 justify-content-end">
+                                                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                                            <button type="submit" class="btn btn-primary" id="add-btn">Pinjam</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade flip" id="deleteOrder" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body p-5 text-center">
+                                                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#405189,secondary:#f06548" style="width:90px;height:90px"></lord-icon>
+                                                    <div class="mt-4 text-center">
+                                                        <h4>You are about to delete a order ?</h4>
+                                                        <p class="text-muted fs-15 mb-4">Deleting your order will remove all of your information from our database.</p>
+                                                        <div class="hstack gap-2 justify-content-center remove">
+                                                            <button class="btn btn-link link-success fw-medium text-decoration-none" id="deleteRecord-close" data-bs-dismiss="modal"><i class="ri-close-line me-1 align-middle"></i> Close</button>
+                                                            <button class="btn btn-danger" id="delete-record">Yes, Delete It</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end modal -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © Velzon.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by Themesbrand
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- list.js min js -->
+    <script src="assets/libs/list.js/list.min.js"></script>
+
+    <!--list pagination js-->
+    <script src="assets/libs/list.pagination.js/list.pagination.min.js"></script>
+
+    <!-- ecommerce-order init js -->
+    <script src="assets/js/pages/ecommerce-order.init.js"></script>
+
+    <!-- Sweet Alerts js -->
+    <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

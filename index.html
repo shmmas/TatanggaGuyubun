@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en" data-layout="semibox" data-sidebar-visibility="show" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dashboard | Tatangga Guyub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- jsvectormap css -->
+    <link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Swiper slider css-->
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+    <div class="layout-width">
+        <div class="navbar-header">
+            <div class="d-flex">
+                
+                <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger" id="topnav-hamburger-icon">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- App Search-->
+                <form class="app-search d-none d-md-block">
+                    <div class="position-relative">
+                        <input type="text" class="form-control" placeholder="Search..." autocomplete="off" id="search-options" value="">
+                        <span class="mdi mdi-magnify search-widget-icon"></span>
+                        <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none" id="search-close-options"></span>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-lg" id="search-dropdown">
+                        <div data-simplebar style="max-height: 320px;">
+                            <!-- item-->
+                            <div class="dropdown-header">
+                                <h6 class="text-overflow text-muted mb-0 text-uppercase">Recent Searches</h6>
+                            </div>
+
+                            <div class="dropdown-item bg-transparent text-wrap">
+                                <a href="index.html" class="btn btn-soft-secondary btn-sm rounded-pill">how to setup <i class="mdi mdi-magnify ms-1"></i></a>
+                                <a href="index.html" class="btn btn-soft-secondary btn-sm rounded-pill">buttons <i class="mdi mdi-magnify ms-1"></i></a>
+                            </div>
+                        
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ri-bubble-chart-line align-middle fs-18 text-muted me-2"></i>
+                                <span>Analytics Dashboard</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"></i>
+                                <span>Help Center</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="ri-user-settings-line align-middle fs-18 text-muted me-2"></i>
+                                <span>My account settings</span>
+                            </a>
+
+                            <!-- item-->
+                            <div class="dropdown-header mt-2">
+                                <h6 class="text-overflow text-muted mb-2 text-uppercase">Members</h6>
+                            </div>
+
+                            <div class="notification-list">
+                                <!-- item -->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-2.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-0">Angela Bernier</h6>
+                                            <span class="fs-11 mb-0 text-muted">Manager</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- item -->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-0">David Grasso</h6>
+                                            <span class="fs-11 mb-0 text-muted">Web Designer</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- item -->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item py-2">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-5.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="m-0">Mike Bunch</h6>
+                                            <span class="fs-11 mb-0 text-muted">React Developer</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-3 pb-1">
+                            <a href="pages-search-results.html" class="btn btn-primary btn-sm">View All Results <i class="ri-arrow-right-line ms-1"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="d-flex align-items-center">
+
+                <div class="dropdown d-md-none topbar-head-dropdown header-item">
+                    <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bx bx-search fs-22"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                        <form class="p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="dropdown ms-sm-3 header-item">
+                    <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="d-flex align-items-center">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                            <span class="text-start ms-xl-2">
+                                <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Anna Adame</span>
+                                <span class="d-none d-xl-block ms-1 fs-12 user-name-sub-text">Founder</span>
+                            </span>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <h6 class="dropdown-header">Welcome Anna!</h6>
+                        <a class="dropdown-item" href="pages-profile-settings.html"><i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Profile</span></a>
+                        <!-- <a class="dropdown-item" href="pages-profile-settings.html"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a> -->
+                        <a class="dropdown-item" href="auth-logout-basic.html"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- removeNotificationModal -->
+<div id="removeNotificationModal" class="modal fade zoomIn" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="NotificationModalbtn-close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mt-2 text-center">
+                    <lord-icon src="https://cdn.lordicon.com/gsqxdxog.json" trigger="loop" colors="primary:#f7b84b,secondary:#f06548" style="width:100px;height:100px"></lord-icon>
+                    <div class="mt-4 pt-2 fs-15 mx-4 mx-sm-5">
+                        <h4>Are you sure ?</h4>
+                        <p class="text-muted mx-4 mb-0">Are you sure you want to remove this Notification ?</p>
+                    </div>
+                </div>
+                <div class="d-flex gap-2 justify-content-center mt-4 mb-2">
+                    <button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn w-sm btn-danger" id="delete-notification">Yes, Delete It!</button>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <a href="index.html" class="logo logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo_lomba.png" alt="" height="125">
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid">
+
+                    <div id="two-column-menu">
+                    </div>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="index.html">
+                                <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboard</span>
+                            </a>
+                        </li> <!-- end Dashboard Menu -->
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTables">
+                                <i class="ri-layout-grid-line"></i> <span data-key="t-tables">Peminjaman</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarTables">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="apps-ecommerce-orders.html" class="nav-link" data-key="t-basic-tables">Barang Dipinjam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="tables-gridjs.html" class="nav-link" data-key="t-grid-js">Sejarah Peminjaman</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAdvanceUI">
+                                <i class="ri-stack-line"></i> <span data-key="t-advance-ui">Master Data</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="barang.html" class="nav-link" data-key="t-sweet-alerts">Barang</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="charts-echarts.html" class="nav-link" data-key="t-nestable-list">Pengguna</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+
+            <div class="sidebar-background"></div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="h-100">
+                                <div class="row mb-3 pb-1">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-lg-center flex-lg-row flex-column">
+                                            <div class="flex-grow-1">
+                                                <h4 class="fs-16 mb-1">HI, Anna!</h4>
+                                                <p class="text-muted mb-0">Selamat datang di Tatangga Guyub</p>
+                                            </div>
+                                            <div class="mt-3 mt-lg-0">
+                                                <form action="javascript:void(0);">
+                                                    <div class="row g-3 mb-0 align-items-center">
+                                                        <div class="col-sm-auto">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control border-0 dash-filter-picker shadow" data-provider="flatpickr" data-range-date="true" data-date-format="d M, Y" data-deafult-date="01 Jan 2022 to 31 Jan 2022">
+                                                                <div class="input-group-text bg-primary border-primary text-white">
+                                                                    <i class="ri-calendar-2-line"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--end col-->
+                                                    </div>
+                                                    <!--end row-->
+                                                </form>
+                                            </div>
+                                        </div><!-- end card header -->
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+
+                                <div class="row">
+                                    <div class="col-xl-3 col-md-6">
+                                        <!-- card -->
+                                        <div class="card card-animate">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-grow-1 overflow-hidden">
+                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0"> Total Warga</p>
+                                                    </div>
+                                                    <div class="flex-shrink-0">
+                                                        <h5 class="text-success fs-14 mb-0">
+                                                            <i class="ri-arrow-right-up-line fs-13 align-middle"></i> +16.24 %
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-end justify-content-between mt-4">
+                                                    <div>
+                                                        <h4 class="fs-20 fw-semibold ff-secondary mb-4"><span class="counter-value" data-target="59">0</span> </h4>
+                                                        <a href="" class="text-decoration-underline">View all</a>
+                                                    </div>
+                                                    <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-success-subtle rounded fs-3">
+                                                            <i class="bx bx-user-circle text-success"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end card body -->
+                                        </div><!-- end card -->
+                                    </div><!-- end col -->
+
+                                    <div class="col-xl-3 col-md-6">
+                                        <!-- card -->
+                                        <div class="card card-animate">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-grow-1 overflow-hidden">
+                                                    <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Total Barang</p>
+                                                    </div>
+                                                    <div class="flex-shrink-0">
+                                                        <h5 class="text-danger fs-14 mb-0">
+                                                            <i class="ri-arrow-right-down-line fs-13 align-middle"></i> -3.57 %
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-end justify-content-between mt-4">
+                                                    <div>
+                                                        <h4 class="fs-20 fw-semibold ff-secondary mb-4"><span class="counter-value" data-target="89">0</span></h4>
+                                                        <a href="" class="text-decoration-underline">View all</a>
+                                                    </div>
+                                                    <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-primary-subtle rounded fs-3">
+                                                            <i class="bx bx-shopping-bag text-primary"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end card body -->
+                                        </div><!-- end card -->
+                                    </div><!-- end col -->
+
+                                    <div class="col-xl-3 col-md-6">
+                                        <!-- card -->
+                                        <div class="card card-animate">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-grow-1 overflow-hidden">
+                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0">Total Pinjaman Bulan ini</p>
+                                                    </div>
+                                                    <div class="flex-shrink-0">
+                                                        <h5 class="text-success fs-14 mb-0">
+                                                            <i class="ri-arrow-right-up-line fs-13 align-middle"></i> +29.08 %
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-end justify-content-between mt-4">
+                                                    <div>
+                                                        <h4 class="fs-20 fw-semibold ff-secondary mb-4"><span class="counter-value" data-target="183">0</span></h4>
+                                                        <a href="" class="text-decoration-underline">View all</a>
+                                                    </div>
+                                                    <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-success-subtle rounded fs-3">
+                                                            <i class="bx bx-user-circle text-success"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end card body -->
+                                        </div><!-- end card -->
+                                    </div><!-- end col -->
+
+                                    <div class="col-xl-3 col-md-6">
+                                        <!-- card -->
+                                        <div class="card card-animate">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-grow-1 overflow-hidden">
+                                                        <p class="text-uppercase fw-medium text-muted text-truncate mb-0"> Total Pinjaman Tahun ini</p>
+                                                    </div>
+                                                    <div class="flex-shrink-0">
+                                                        <h5 class="text-muted fs-14 mb-0">
+                                                            +0.00 %
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-end justify-content-between mt-4">
+                                                    <div>
+                                                        <h4 class="fs-20 fw-semibold ff-secondary mb-4"><span class="counter-value" data-target="408">0</span></h4>
+                                                        <a href="" class="text-decoration-underline">View all</a>
+                                                    </div>
+                                                    <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-success-subtle rounded fs-3">
+                                                            <i class="bx bx-user-circle text-success"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end card body -->
+                                        </div><!-- end card -->
+                                    </div><!-- end col -->
+                                </div> <!-- end row-->
+
+                                <div class="row">
+                                    <div class="col-xl-8">
+                                        <div class="card">
+                                            <div class="card-header align-items-center d-flex">
+                                                <h4 class="card-title mb-0 flex-grow-1">List Barang</h4>
+                                                <div class="flex-shrink-0">
+                                                    <div class="dropdown card-header-dropdown">
+                                                        <a class="text-reset dropdown-btn" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <span class="fw-semibold text-uppercase fs-12">Sort by:
+                                                            </span><span class="text-muted">Today<i class="mdi mdi-chevron-down ms-1"></i></span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="#">Today</a>
+                                                            <a class="dropdown-item" href="#">Yesterday</a>
+                                                            <a class="dropdown-item" href="#">Last 7 Days</a>
+                                                            <a class="dropdown-item" href="#">Last 30 Days</a>
+                                                            <a class="dropdown-item" href="#">This Month</a>
+                                                            <a class="dropdown-item" href="#">Last Month</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end card header -->
+
+                                            <div class="card-body">
+                                                <div class="table-responsive table-card">
+                                                    <table class="table table-hover table-centered align-middle table-nowrap mb-0">
+                                                        <tbody>
+                                                            <tr onclick="window.location='apps-ecommerce-product-details.html'">
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="avatar-sm bg-light rounded p-1 me-2">
+                                                                            <img src="assets/images/list_barang/sound.jpg" alt="app" class="img-fluid d-block" />
+                                                                        </div>
+                                                                        <div>
+                                                                            <h5 class="fs-14 my-1"><a href="apps-ecommerce-product-details.html" class="text-reset">Sound</a></h5>
+                                                                            <span class="text-muted">24 Apr 2021</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">29</h5>
+                                                                    <span class="text-muted">Jumlah Barang</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">M Azmi</h5>
+                                                                    <span class="text-muted">Nama Peminjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">09/18/2025</h5>
+                                                                    <span class="text-muted">Waktu Pinjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">09/19/2025</h5>
+                                                                    <span class="text-muted">Rencana Pengembalian</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="avatar-sm bg-light rounded p-1 me-2">
+                                                                            <img src="assets/images/list_barang/kursi_plastik.jpg" alt="" class="img-fluid d-block" />
+                                                                        </div>
+                                                                        <div>
+                                                                            <h5 class="fs-14 my-1"><a href="apps-ecommerce-product-details.html" class="text-reset">Kursi PLastik</a></h5>
+                                                                            <span class="text-muted">19 Mar 2021</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">25</h5>
+                                                                    <span class="text-muted">Jumlah Barang</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">Isad Firdaus</h5>
+                                                                    <span class="text-muted">Nama Peminjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">09/02/2025</h5>
+                                                                    <span class="text-muted">Waktu Pinjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">09/05/2025</h5>
+                                                                    <span class="text-muted">Rencana Pengembalian</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="avatar-sm bg-light rounded p-1 me-2">
+                                                                            <img src="assets/images/list_barang/meja_kayu.jpg" alt="" class="img-fluid d-block" />
+                                                                        </div>
+                                                                        <div>
+                                                                            <h5 class="fs-14 my-1"><a href="apps-ecommerce-product-details.html" class="text-reset">Meja Kayu</a></h5>
+                                                                            <span class="text-muted">01 Mar 2021</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">14</h5>
+                                                                    <span class="text-muted">Jumlah Barang</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">Hardian Firmansyah</h5>
+                                                                    <span class="text-muted">Nama Peminjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">11/04/2025</h5>
+                                                                    <span class="text-muted">Waktu pinjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">12/10/2025</h5>
+                                                                    <span class="text-muted">Rencana Pengembalian</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="avatar-sm bg-light rounded p-1 me-2">
+                                                                            <img src="assets/images/list_barang/microphone.jpg" alt="" class="img-fluid d-block" />
+                                                                        </div>
+                                                                        <div>
+                                                                            <h5 class="fs-14 my-1"><a href="apps-ecommerce-product-details.html" class="text-reset">Microphone</a></h5>
+                                                                            <span class="text-muted">11 Feb 2021</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">12</h5>
+                                                                    <span class="text-muted">Jumlah Barang</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">Shamas Khalis</h5>
+                                                                    <span class="text-muted">Nama Peminjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">10/20/2025</h5>
+                                                                    <span class="text-muted">Waktu Pinjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">11/13/2025</h5>
+                                                                    <span class="text-muted">Rencana Pengembalian</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="avatar-sm bg-light rounded p-1 me-2">
+                                                                            <img src="assets/images/list_barang/terpal.webp" alt="" class="img-fluid d-block" />
+                                                                        </div>
+                                                                        <div>
+                                                                            <h5 class="fs-14 my-1"><a href="apps-ecommerce-product-details.html" class="text-reset">Terpal</a></h5>
+                                                                            <span class="text-muted">17 Jan 2021</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">54</h5>
+                                                                    <span class="text-muted">Jumlah Barang</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">Ihsan Nashrul A</h5>
+                                                                    <span class="text-muted">Nama Peminjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">09/29/2025</h5>
+                                                                    <span class="text-muted">Waktu Pinjam</span>
+                                                                </td>
+                                                                <td>
+                                                                    <h5 class="fs-14 my-1 fw-normal">10/10/2025</h5>
+                                                                    <span class="text-muted">Rencana Pengembalian</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="align-items-center mt-4 pt-2 justify-content-between row text-center text-sm-start">
+                                                    <div class="col-sm">
+                                                        <div class="text-muted">
+                                                            Showing <span class="fw-semibold">5</span> of <span class="fw-semibold">25</span> Results
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-auto  mt-3 mt-sm-0">
+                                                        <ul class="pagination pagination-separated pagination-sm mb-0 justify-content-center">
+                                                            <li class="page-item disabled">
+                                                                <a href="#" class="page-link">←</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a href="#" class="page-link">1</a>
+                                                            </li>
+                                                            <li class="page-item active">
+                                                                <a href="#" class="page-link">2</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a href="#" class="page-link">3</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a href="#" class="page-link">→</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-xl-4">
+                                        <!-- card -->
+                                        <div class="card card-height-100">
+                                            <div class="card-header align-items-center d-flex">
+                                                <h4 class="card-title mb-0 flex-grow-1">Peta Persebaran Barang</h4>
+                                                <div class="flex-shrink-0">
+                                                    <button type="button" class="btn btn-soft-primary btn-sm">
+                                                        Export Report
+                                                    </button>
+                                                </div>
+                                            </div><!-- end card header -->
+
+                                            <!-- card body -->
+                                            <div class="card-body">
+
+                                                <div id="sales-by-locations" dir="ltr">
+                                                    <img src="assets/images/maps.png" alt="" class="img-fluid d-block">
+                                                </div>
+
+                                                <div class="px-2 py-2 mt-1">
+                                                    <p class="mt-3 mb-1">Persebaran Barang <span class="float-end">47%</span>
+                                                    </p>
+                                                    <div class="progress mt-2" style="height: 6px;">
+                                                        <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 47%" aria-valuenow="47" aria-valuemin="0" aria-valuemax="47"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end card body -->
+                                        </div>
+                                        <!-- end card -->
+                                    </div>
+                                    <!-- end col -->
+                                </div>
+
+                            </div> <!-- end .h-100-->
+                        </div> <!-- end col -->        
+                    </div>
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © Velzon.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by Themesbrand
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Vector map-->
+    <script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+    <!--Swiper slider js-->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Dashboard init -->
+    <script src="assets/js/pages/dashboard-ecommerce.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
